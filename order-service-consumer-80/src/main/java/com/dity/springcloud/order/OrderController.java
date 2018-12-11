@@ -24,7 +24,7 @@ public class OrderController {
     @RequestMapping("consumer")
     @ResponseBody
     public String consumer(){
-        return restTemplate.getForEntity("http://user-service-provider-8001/provider",String.class).getBody();
+        return restTemplate.getForEntity("http://user-service-provider/provider",String.class).getBody();
     }
 
 }
