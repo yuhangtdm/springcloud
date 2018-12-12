@@ -21,6 +21,7 @@ public class UserController {
     @RequestMapping("/provider")
     @ResponseBody
     public String provider(){
-        return "hello i am provider";
+        System.out.println("我是提供者1");
+        return "hello i am provider1";
     }
 }
